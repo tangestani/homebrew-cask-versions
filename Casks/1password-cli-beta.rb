@@ -10,7 +10,7 @@ cask "1password-cli-beta" do
 
   livecheck do
     url "https://app-updates.agilebits.com/product_history/CLI2"
-    regex(%r{href=.*?/op_apple_universal[._-]v?(\d+(?:\.\d+)+-beta\.\d+)\.pkg}i)
+    regex(%r{href=.*?/op_apple_universal[._-]v?(\d+(?:\.\d+)+(?:-beta)?\.\d+)\.pkg}i)
   end
 
   conflicts_with cask: "1password-cli"
